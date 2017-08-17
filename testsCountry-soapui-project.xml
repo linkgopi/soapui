@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="5c490d04-6499-4cd6-9aa7-af5d7e458f5a" activeEnvironment="Default" name="country" resourceRoot="" soapui-version="5.3.0" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="05a1e0a7-ac0d-4ac5-b4b7-d89f0738c860" wsaVersion="NONE" name="countrySoap" type="wsdl" bindingName="{http://www.webserviceX.NET}countrySoap" soapVersion="1_1" anonymous="optional" definition="http://www.webservicex.net/country.asmx?WSDL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>http://www.webservicex.net/country.asmx</con:endpoint></con:endpoints><con:operation id="0a9c83cc-2622-4fec-924e-82852d960ed0" isOneWay="false" action="http://www.webserviceX.NET/GetCountries" name="GetCountries" bindingOperationName="GetCountries" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="56bc9569-acf2-4df1-95e6-a3d1ddae65e5" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/country.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.webserviceX.NET">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:GetCountries/>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.webserviceX.NET/GetCountries"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="50c0aa5f-8a4b-404b-a9d0-fdff19448553" isOneWay="false" action="http://www.webserviceX.NET/GetCountryByCountryCode" name="GetCountryByCountryCode" bindingOperationName="GetCountryByCountryCode" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="ed3950b7-f294-4448-84cf-9dc54c0e4dc0" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/country.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.webserviceX.NET">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:GetCountryByCountryCode>
+         <!--Optional:-->
+         <web:CountryCode>?</web:CountryCode>
+      </web:GetCountryByCountryCode>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.webserviceX.NET/GetCountryByCountryCode"/></con:call></con:operation><con:operation id="22ebc4c8-496d-4742-ab49-f2c01a1c695b" isOneWay="false" action="http://www.webserviceX.NET/GetCountryByCurrencyCode" name="GetCountryByCurrencyCode" bindingOperationName="GetCountryByCurrencyCode" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="cf2b70f7-2bb5-47ab-aa0c-6daa795e820b" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/country.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.webserviceX.NET">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:GetCountryByCurrencyCode>
+         <!--Optional:-->
+         <web:CurrencyCode>?</web:CurrencyCode>
+      </web:GetCountryByCurrencyCode>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.webserviceX.NET/GetCountryByCurrencyCode"/></con:call></con:operation><con:operation id="d0dc4578-6163-4f4f-9b96-59a4b0e4b257" isOneWay="false" action="http://www.webserviceX.NET/GetCurrencies" name="GetCurrencies" bindingOperationName="GetCurrencies" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="febb42bf-a884-4030-90d4-6f8a9166a8c0" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/country.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.webserviceX.NET">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:GetCurrencies/>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.webserviceX.NET/GetCurrencies"/></con:call></con:operation><con:operation id="8cb3fa31-0ceb-4b6a-b775-a0828c451ec6" isOneWay="false" action="http://www.webserviceX.NET/GetCurrencyByCountry" name="GetCurrencyByCountry" bindingOperationName="GetCurrencyByCountry" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="e5147f04-e2ad-499e-9dec-2bf77472bb3e" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/country.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.webserviceX.NET">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:GetCurrencyByCountry>
+         <!--Optional:-->
+         <web:CountryName>?</web:CountryName>
+      </web:GetCurrencyByCountry>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.webserviceX.NET/GetCurrencyByCountry"/></con:call></con:operation><con:operation id="ed3193f7-dbcb-49d9-bb19-db563723feb7" isOneWay="false" action="http://www.webserviceX.NET/GetCurrencyCode" name="GetCurrencyCode" bindingOperationName="GetCurrencyCode" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="4e8864b2-fc3d-48a4-838e-715e2d633662" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/country.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.webserviceX.NET">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:GetCurrencyCode/>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.webserviceX.NET/GetCurrencyCode"/></con:call></con:operation><con:operation id="614c287a-2698-4bc7-ac27-27954928fb7e" isOneWay="false" action="http://www.webserviceX.NET/GetCurrencyCodeByCurrencyName" name="GetCurrencyCodeByCurrencyName" bindingOperationName="GetCurrencyCodeByCurrencyName" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="513e7682-263a-4557-84fe-686659b260d4" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/country.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.webserviceX.NET">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:GetCurrencyCodeByCurrencyName>
+         <!--Optional:-->
+         <web:CurrencyName>?</web:CurrencyName>
+      </web:GetCurrencyCodeByCurrencyName>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.webserviceX.NET/GetCurrencyCodeByCurrencyName"/></con:call></con:operation><con:operation id="76c04372-9125-4a68-a621-a05156441a5b" isOneWay="false" action="http://www.webserviceX.NET/GetGMTbyCountry" name="GetGMTbyCountry" bindingOperationName="GetGMTbyCountry" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="97fbfc60-dd8b-4062-a5c3-4d78d835f22e" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/country.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.webserviceX.NET">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:GetGMTbyCountry>
+         <!--Optional:-->
+         <web:CountryName>?</web:CountryName>
+      </web:GetGMTbyCountry>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.webserviceX.NET/GetGMTbyCountry"/></con:call></con:operation><con:operation id="a0650f40-ef26-4aee-930c-77fb6985adf6" isOneWay="false" action="http://www.webserviceX.NET/GetISD" name="GetISD" bindingOperationName="GetISD" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="b73d70bd-cafe-422d-8473-8e063b206a5a" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/country.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.webserviceX.NET">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:GetISD>
+         <!--Optional:-->
+         <web:CountryName>?</web:CountryName>
+      </web:GetISD>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.webserviceX.NET/GetISD"/></con:call></con:operation><con:operation id="382db120-edd2-4161-8740-fdd44a9d0ec9" isOneWay="false" action="http://www.webserviceX.NET/GetISOCountryCodeByCountyName" name="GetISOCountryCodeByCountyName" bindingOperationName="GetISOCountryCodeByCountyName" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="5d96333f-7c37-4ba6-b2fc-cbec66559a14" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/country.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.webserviceX.NET">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:GetISOCountryCodeByCountyName>
+         <!--Optional:-->
+         <web:CountryName>?</web:CountryName>
+      </web:GetISOCountryCodeByCountyName>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.webserviceX.NET/GetISOCountryCodeByCountyName"/></con:call></con:operation></con:interface><con:testSuite id="5e4f13af-12c2-40c6-af58-6f602ff8829b" name="country_TestSuite"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="5e5b1f38-0dc3-4ac0-9c6d-24eecc09c2ff" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="country_TestCase" searchProperties="true"><con:settings/><con:testStep type="request" name="verify_India" id="98be8f8d-10f5-4893-9309-be52ee4ecd83"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>countrySoap</con:interface><con:operation>GetCountries</con:operation><con:request name="verify_India" id="bb66d697-a741-4ddb-a04f-b373c94fc638"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/country.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.webserviceX.NET">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:GetCountries/>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="df6eae54-1e4e-40fe-a1da-9a74b683a9b4" name="SOAP Response"/><con:assertion type="Simple Contains" id="e920175b-f306-4473-9099-21e78dd19b30" name="Contains"><con:configuration><token>India</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" id="7e96025a-462b-407d-9cea-246c65177a43" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>
